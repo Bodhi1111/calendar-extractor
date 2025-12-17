@@ -183,7 +183,7 @@ function extractAttendees(message) {
  * @return {string} Extracted email address
  */
 function extractEmail(emailString) {
-  const match = emailString.match(/[\w\.-]+@[\w\.-]+\.\w+/);
+  const match = emailString.match(/[\w.\-]+@[\w.\-]+\.\w+/);
   return match ? match[0] : '';
 }
 
